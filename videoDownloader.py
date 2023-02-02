@@ -9,5 +9,11 @@ def Descarga():
         print('Hubo un error en la descarga')
     print('Descarga completada')
 
-Descarga()
-input()
+termine = False
+while(termine == False):
+    Descarga()
+    opcion = input('Continuar(Y/N)')
+    if( opcion == 'N' or opcion == 'n'):
+        termine = True
+else:
+    input()
